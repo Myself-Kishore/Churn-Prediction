@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Churn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        label {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        input[type="text"], input[type="number"] {
+            background-color: #083b5e;
+            color: #083b5e;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            padding: 10px;
+            border: 5px solid #000000;
+            border-radius: 10px;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        input[type="text"]::placeholder, input[type="number"]::placeholder {
+            color: #ccc;
+        }
+
+        col {
+            width: 10%;
+        }
+        .btn-primary {
+            background-color: #2c6eb4;
+            border-color: #337ab7;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            border: 1px solid powderblue;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #000000;
+            border-color: #000000;
+        }
+    </style>
+       
+</head>
+<h2><center><u> CUSTOMER CHURN PREDICTION </u></center></h2>
+<body style="background-color:rgb(34, 126, 172);">
+<form action="/" method="POST">
+    <fieldset><br>
+        <center>
+                 <div class="form">
+                    <label for="Dependents">Dependents:</label><br>
+                    <input type="text" name="Dependents" id="Dependents" value="" placeholder="Enter Dependent Or Not ( Yes / No )"><br><br>
+
+                    <label for="tenure">Tenure:</label><br>
+                    <input type="number" name="tenure" id="tenure" value="" placeholder="Select Tenure in years"><br><br>
+
+                     <label for="OnlineSecurity"> Online Security:</label><br>
+                     <input type="text" name="OnlineSecurity" id="OnlineSecurity" value="" placeholder="Enter Secured Or Not ( Yes / No)"><br><br>
+
+                     <label for="OnlineBackup">Online Backup:</label><br>
+                     <input type="text" name="OnlineBackup" id="OnlineBackup" value="" placeholder="Enter Backup Or Not ( Yes / No)"><br><br>
+
+                     <label for="DeviceProtection">Device Protection:</label><br>
+                     <input type="text" name="DeviceProtection" id="DeviceProtection" value="" placeholder="Enter Having Or Not ( Yes / No)"><br><br>
+
+                     <label for="TechSupport">TechSupport:</label><br>
+                     <input type="text" name="TechSupport" id="TechSupport" value="" placeholder="Enter TechSupport Or Not ( Yes / No )"><br><br>
+
+                     <label for="Contract">Contract:</label><br>
+                     <input type="text" name="Contract" id="Contract" value="" placeholder="Enter Contract Time ( One year / Two year / Month-to-month)"><br><br>
+
+
+                     <label for="PaperlessBilling">Paperless Billing:</label><br>
+                     <input type="text" name="PaperlessBilling" id="PaperlessBilling" value="" placeholder="Enter Paperless Or Not ( Yes / No)"><br><br>
+
+                     <label for="MonthlyCharges">Monthly Charges:</label><br>
+                     <input type="text" name="MonthlyCharges" id="MonthlyCharges" value="" placeholder="Enter Monthly Charges"><br><br>
+
+                     <label for="TotalCharges">Total Charges:</label><br>
+                     <input type="text" name="TotalCharges" id="TotalCharges" value="" placeholder="Enter Total Charges"><br><br>
+                 </div>
+
+                 <div class="col">
+                     <button style="background-color:rgb(12, 0, 1);border-color:powderblue;color:white" type="submit" class="btn btn-primary" name="submit">SUBMIT</button>
+			     </div>
+    </center>
+    </fieldset>
+
+</form>
+
+<div class="form">
+    <center><br>
+        <output> <strong>{{op1}}</strong></output><br><output><strong>{{op2}}</strong></output>
+    </center>
+</div>
+</body>
+</html>
