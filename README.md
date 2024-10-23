@@ -1,5 +1,5 @@
 # Customer-Churn-Prediction:
-<div style="text-align: center;">
+<div style="align: center;">
   <img src="https://user-images.githubusercontent.com/90024661/135493461-457a32f2-c03a-4dfa-a9e7-1d1a362dd5f1.png" alt="Churn">
 </div>
 
